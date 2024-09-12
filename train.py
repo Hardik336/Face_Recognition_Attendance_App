@@ -19,7 +19,7 @@ class Train:
         title_lbl=Label(self.root,text="TRAIN DATA SET",font=("times new roman",35,"bold"),bg="WHITE",fg="red");
         title_lbl.place(x=0,y=0,width=1530,height=45);
         
-        img2_top=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\facialrecognition.png")
+        img2_top=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\face-recognition-1024x630.jpg")
         img2_top=img2_top.resize((1530,325),Image.LANCZOS);
         self.photoimg_top=ImageTk.PhotoImage(img2_top);
         
@@ -30,7 +30,7 @@ class Train:
         b1_1=Button(self.root,text="TRAIN DATA",command=self.train_classifier,cursor="hand2",font=("times new roman",30,"bold"),bg="red",fg="white");
         b1_1.place(x=0,y=380,width=1530,height=60);
         
-        img2_bottom=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\opencv_face_reco_more_data.jpg")
+        img2_bottom=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\face_det.png")
         img2_bottom=img2_bottom.resize((1530,325),Image.LANCZOS);
         self.photoimg_bottom=ImageTk.PhotoImage(img2_bottom);
         

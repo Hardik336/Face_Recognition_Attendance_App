@@ -23,12 +23,6 @@ class Register:
         
         
         
-        # self.bg=ImageTk.PhotoImage(file=r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\wp9764081.webp")
-        
-        # bg_lbl=Label(self.root,image=self.bg)
-        # bg_lbl.place(x=0,y=0,relwidth=1,relheight=1)
-        
-        
         # ========== bg image ===========
         image = Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\iStock-1163542789-945x630.jpg")
         resized_image = image.resize((1600, 900), Image.LANCZOS)
@@ -127,7 +121,7 @@ class Register:
         img1=img1.resize((200,45),Image.LANCZOS)
         self.photoimage1=ImageTk.PhotoImage(img1)
         b1=Button(frame,image=self.photoimage1,borderwidth=0,cursor="hand2")
-        b1.place(x=400,y=420,width=200)
+        b1.place(x=400,y=430,width=200)
         
     # ======= Function Declaration =========
     def register_data(self):
@@ -160,7 +154,7 @@ class Register:
             conn.commit()
             conn.close()
             messagebox.showinfo("Success","Register Successfully")
-        
+            self.close_and_clear_login()  # Call this method after successful registration
         
 if __name__ == "__main__":
     root=Tk()

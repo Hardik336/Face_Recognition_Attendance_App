@@ -67,7 +67,7 @@ class Face_Recognition_System:
         
         
         # Student button
-        img4=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\student.jpg")
+        img4=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\th (4).jpeg")
         img4=img4.resize((220,220),Image.LANCZOS);
         self.photoimg4=ImageTk.PhotoImage(img4);
         

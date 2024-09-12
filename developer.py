@@ -52,10 +52,6 @@ class Developer:
 
 
 
-
-
-
-
 if __name__== "__main__":
     root=Tk()
     obj=Developer(root)

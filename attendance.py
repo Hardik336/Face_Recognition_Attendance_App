@@ -49,14 +49,14 @@ class Attendance:
         bg_img=Label(self.root,image=self.photoimg3);
         bg_img.place(x=0,y=200,width=1530,height=710);
        
-        title_lbl=Label(bg_img,text="ATTENDANCE MANAGEMNET SYSTEM",font=("times new roman",35,"bold"),bg="WHITE",fg="DARKGREEN");
+        title_lbl=Label(bg_img,text="ATTENDANCE MANAGEMNET SYSTEM",font=("times new roman",35,"bold"),bg="pink",fg="DARKGREEN");
         title_lbl.place(x=0,y=0,width=1530,height=45);
         
-        main_frame=Frame(bg_img,bd=2,bg="white");
+        main_frame=Frame(bg_img,bd=2,bg="pink");
         main_frame.place(x=13,y=55,width=1500,height=520);
         
         # Left label frame
-        Left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Attendance Details",font=("times new roman",12,"bold"));
+        Left_frame=LabelFrame(main_frame,bd=2,bg="lightblue",relief=RIDGE,text="Student Attendance Details",font=("times new roman",12,"bold"));
         Left_frame.place(x=5,y=10,width=740,height=480)
         
         img2_left=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\face-recognition.png")
@@ -67,7 +67,7 @@ class Attendance:
         f_lbl2.place(x=3,y=0,width=730,height=150);
         
         # Left inside frame
-        left_inside_frame=Frame(Left_frame,bd=2,relief=RIDGE,bg="white");
+        left_inside_frame=Frame(Left_frame,bd=2,relief=RIDGE,bg="palegreen");
         left_inside_frame.place(x=7,y=155,width=722,height=295);
         
         # Labels and Entry
@@ -149,7 +149,7 @@ class Attendance:
         
         
         # Right label frame
-        Right_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Attendance Details",font=("times new roman",12,"bold"));
+        Right_frame=LabelFrame(main_frame,bd=2,bg="lightblue",relief=RIDGE,text="Attendance Details",font=("times new roman",12,"bold"));
         Right_frame.place(x=747,y=10,width=730,height=480);
         
         # Right inside frame

@@ -31,27 +31,27 @@ class Student:
         
         # Image 1
         img=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\face-recognition.png")
-        img=img.resize((500,130),Image.LANCZOS);
+        img=img.resize((600,130),Image.LANCZOS);
         self.photoimg=ImageTk.PhotoImage(img);
         
         f_lbl=Label(self.root,image=self.photoimg);
-        f_lbl.place(x=0,y=0,width=500,height=130);
+        f_lbl.place(x=0,y=0,width=550,height=130);
         
         # Image 2
         img1=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\smart-attendance.jpg")
-        img1=img1.resize((500,130),Image.LANCZOS);
+        img1=img1.resize((600,130),Image.LANCZOS);
         self.photoimg1=ImageTk.PhotoImage(img1);
         
         f_lbl1=Label(self.root,image=self.photoimg1);
-        f_lbl1.place(x=500,y=0,width=500,height=130);
+        f_lbl1.place(x=500,y=0,width=550,height=130);
         
         # Image 3
         img2=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\iStock-182059956_18390_t12.jpg")
-        img2=img2.resize((500,130),Image.LANCZOS);
+        img2=img2.resize((550,130),Image.LANCZOS);
         self.photoimg2=ImageTk.PhotoImage(img2);
         
         f_lbl2=Label(self.root,image=self.photoimg2);
-        f_lbl2.place(x=1000,y=0,width=550,height=130);
+        f_lbl2.place(x=1000,y=0,width=530,height=130);
         
         # Background Image
         img3=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\bjimg.jpg")
@@ -61,15 +61,16 @@ class Student:
         bg_img=Label(self.root,image=self.photoimg3);
         bg_img.place(x=0,y=130,width=1530,height=710);
         
-        title_lbl=Label(bg_img,text="STUDENT MANAGEMNET SYSTEM",font=("times new roman",35,"bold"),bg="WHITE",fg="DARKGREEN");
+        title_lbl=Label(bg_img,text="STUDENT MANAGEMNET SYSTEM",font=("times new roman",35,"bold"),bg="pink",fg="DARKGREEN");
         title_lbl.place(x=0,y=0,width=1530,height=45);
         
-        main_frame=Frame(bg_img,bd=2,bg="white");
+        main_frame=Frame(bg_img,bd=2,bg="pink");
         main_frame.place(x=10,y=55,width=1500,height=600);
         
         # Left label frame
-        Left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"));
+        Left_frame=LabelFrame(main_frame,bd=2,bg="lightblue",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"));
         Left_frame.place(x=10,y=10,width=740,height=580)
+        
         
         img2_left=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\AdobeStock_303989091.jpeg")
         img2_left=img2_left.resize((730,130),Image.LANCZOS);
@@ -80,7 +81,7 @@ class Student:
         
         
         # current course information
-        current_course_frame=LabelFrame(Left_frame,bd=2,bg="white",relief=RIDGE,text="Current course information",font=("times new roman",12,"bold"));
+        current_course_frame=LabelFrame(Left_frame,bd=2,bg="palegreen",relief=RIDGE,text="Current course information",font=("times new roman",12,"bold"));
         current_course_frame.place(x=5,y=135,width=730,height=115)
         
         # Department
@@ -97,7 +98,7 @@ class Student:
         course_label.grid(row=0,column=2,padx=10,sticky=W);
         
         course_combo=ttk.Combobox(current_course_frame,textvariable=self.var_course,font=("times new roman",13,"bold"),state="readonly",width=20);
-        course_combo["values"]=("Select Course","FE","SE","TE","BE");
+        course_combo["values"]=("Select Course","First Year","Second Year","Third Year","Final Year");
         course_combo.current(0)
         course_combo.grid(row=0,column=3,padx=2,pady=10,sticky=W);
         
@@ -121,7 +122,7 @@ class Student:
         
         
         # class student information
-        class_student_frame=LabelFrame(Left_frame,bd=2,bg="white",relief=RIDGE,text="Class Student information",font=("times new roman",12,"bold"));
+        class_student_frame=LabelFrame(Left_frame,bd=2,bg="palegreen",relief=RIDGE,text="Class Student information",font=("times new roman",12,"bold"));
         class_student_frame.place(x=5,y=250,width=730,height=300);
         
         # Student id label
@@ -249,7 +250,7 @@ class Student:
         
         
         # Right label frame
-        Right_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"));
+        Right_frame=LabelFrame(main_frame,bd=2,bg="lightblue",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"));
         Right_frame.place(x=760,y=10,width=730,height=580);
         
         img2_right=Image.open(r"C:\Users\hardik\OneDrive\Documents\Desktop\Face_Recognition_System\1628243597666college-images\college_images\student.jpg");
@@ -260,7 +261,7 @@ class Student:
         f_lbl2.place(x=5,y=0,width=730,height=130);
         
         # ++++++ Search system +++++++++
-        search_frame=LabelFrame(Right_frame,bd=2,bg="white",relief=RIDGE,text="Search system",font=("times new roman",12,"bold"));
+        search_frame=LabelFrame(Right_frame,bd=2,bg="palegreen",relief=RIDGE,text="Search system",font=("times new roman",12,"bold"));
         search_frame.place(x=5,y=135,width=730,height=70);
         
         # Serach bar
